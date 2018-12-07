@@ -1,2 +1,2 @@
 # install_postgres
-Simple Auto-install script for PostgreSQL on CentOS 7
+Simple auto-install script for PostgreSQL on CentOS 7
