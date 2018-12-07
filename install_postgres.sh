@@ -38,7 +38,6 @@ then
 yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat10-10-2.noarch.rpm
 yum install postgresql10 postgresql10-server postgresql10-contrib
 /usr/pgsql-10/bin/postgresql-10-setup initdb
-#/usr/pgsql-10/bin/initdb -D /var/lib/pgsql/10/data
 systemctl enable postgresql-10
 systemctl start postgresql-10
 fi
