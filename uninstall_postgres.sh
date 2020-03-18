@@ -38,3 +38,10 @@ yum remove postgresql11 postgresql11-server postgresql11-contrib postgresql11-li
 rm -rf /var/lib/pgsql/11
 rm -rf /usr/pgsql-11
 fi
+
+if [ $pg_version = "12" ]
+then
+yum remove postgresql12 postgresql12-server postgresql12-contrib postgresql12-libs
+rm -rf /var/lib/pgsql/12
+rm -rf /usr/pgsql-12
+fi
