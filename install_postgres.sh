@@ -35,7 +35,7 @@ fi
 
 if [ $pg_version = "10" ]
 then
-yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat10-10-2.noarch.rpm
+yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm
 yum install postgresql10 postgresql10-server postgresql10-contrib
 /usr/pgsql-10/bin/postgresql-10-setup initdb
 systemctl enable postgresql-10
@@ -49,4 +49,13 @@ yum install postgresql11 postgresql11-server postgresql11-contrib
 /usr/pgsql-11/bin/postgresql-11-setup initdb
 systemctl enable postgresql-11
 systemctl start postgresql-11
+fi
+
+if [ $pg_version = "12" ]
+then
+yum install https://download.postgresql.org/pub/repos/yum/12/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+yum install postgresql12 postgresql12-server postgresql12-contrib
+/usr/pgsql-12/bin/postgresql-12-setup initdb
+systemctl enable postgresql-12
+systemctl start postgresql-12
 fi
