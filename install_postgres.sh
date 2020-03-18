@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Veuillez saisir la version de PostgreSQL a installée (9.4/9.5/9.6/9.6/10/11) :"
+echo "Veuillez saisir la version de PostgreSQL a installée (9.4/9.5/9.6/9.6/10/11/12) :"
 read pg_version
 echo $pg_version
 
